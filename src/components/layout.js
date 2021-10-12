@@ -8,6 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from "./header"
 import "./layout.css"
@@ -39,9 +40,9 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, Lena Gabinskaya (design) and Boris Guzner
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          (<a href="https://www.regmagik.com/contact">web development</a>)
         </footer>
       </div>
     </>

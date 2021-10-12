@@ -1,9 +1,50 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { Button, Collapse, Container, Row, Col, Jumbotron, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
+
+export function NavMenu(props) {
+  
+	const [state, setState] = React.useState({
+		collapsed: true
+	});
+
+	function toggleNavbar () {
+	  setState(s => ({...s,
+		collapsed: !s.collapsed
+	  }));
+	}
+  
+	  return (
+		<header>
+		  <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" light>
+			<Container>
+			  <NavbarBrand href="/">Lena Gabinskaya</NavbarBrand>
+			  <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+			  <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!state.collapsed} navbar>
+				<Nav>
+				  <NavItem>
+					<NavLink className="text-dark" href="/">Home</NavLink>
+				  </NavItem>
+				  <NavItem>
+					<NavLink className="text-dark" href="/services">Services</NavLink>
+				  </NavItem>
+				  <NavItem>
+					<NavLink className="text-dark" href="/about">About</NavLink>
+				  </NavItem>
+				  <NavItem>
+					<NavLink className="text-dark" href="/contact">Contact</NavLink>
+				  </NavItem>
+				</Nav>
+			  </Collapse>
+			</Container>
+		  </Navbar>
+		</header>
+	  );
+}
 
 const Header = ({ siteTitle }) => (
-  <header
+<>  <header
     style={{
       background: `rgb(110,141,63)`,
       marginBottom: `1.45rem`,
@@ -30,7 +71,8 @@ const Header = ({ siteTitle }) => (
 <h2>Registered Dietitian</h2>
     </div>
   </header>
-)
+<NavMenu/>
+</>)
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

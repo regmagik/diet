@@ -24,16 +24,13 @@ const IndexPage = () => (
                         </div>
                 </div>
 
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={80}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
+    <img
+      src="/images/cook.jpg"
+      alt="A healthy diet"
       style={{ marginBottom: `1.45rem` }}
     />
     <p>
-      <Link to="/using-typescript/">Go to contact page</Link> <br />
+      <Link to="/contact/">Go to contact page</Link>
     </p>
   </Layout>
 )
