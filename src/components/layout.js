@@ -40,9 +40,9 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Lena Gabinskaya (design) and Boris Guzner
+          © {new Date().getFullYear()}, Lena Gabinskaya (idea, content) and Boris Guzner
           {` `}
-          (<a href="https://www.regmagik.com/contact">web development</a>)
+          (<a href="https://www.regmagik.com/contact" target="_blank">web development</a>)
         </footer>
       </div>
     </>
