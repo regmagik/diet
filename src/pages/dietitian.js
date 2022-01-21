@@ -5,7 +5,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-export default DietitianPage = () => (
+export default DietitianPage;
+const DietitianPage = () => (
   <Layout>
     <Seo title="Registered Dietitian" />
 <div class="sections-wrapper">
