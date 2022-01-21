@@ -27,9 +27,6 @@ export function NavMenu(props) {
 					<NavLink className="text-dark" href="/">Home</NavLink>
 				  </NavItem>
 				  <NavItem>
-					<NavLink className="text-dark" href="/dietitian">Dietitian</NavLink>
-				  </NavItem>
-				  <NavItem>
 					<NavLink className="text-dark" href="/services">Services</NavLink>
 				  </NavItem>
 				  <NavItem>
