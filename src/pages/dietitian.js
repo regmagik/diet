@@ -1,18 +1,16 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-export default DietitianPage;
-const DietitianPage = () => (
+export default function Page() { return (
   <Layout>
     <Seo title="Registered Dietitian" />
-<div class="sections-wrapper">
-                        <div class="span12   ">
-                                <div class="outer-margin-on first last">
-                                    <div class="section article margins-on">
+	<div class="sections-wrapper">
+		<div class="span12   ">
+				<div class="outer-margin-on first last">
+					<div class="section article margins-on">
     
     <div class="content">
 <p>I can help you lose the extra weight, gain strength, get in better shape, and improve your concentration and mental performance.</p>
@@ -34,4 +32,4 @@ const DietitianPage = () => (
       <Link to="/contact/">Go to contact page</Link>
     </p>
   </Layout>
-)
+)}
