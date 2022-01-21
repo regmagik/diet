@@ -1,9 +1,8 @@
 import * as React from "react"
 import SecondPage from "./about"
 
-export default  IndexPage;
-const IndexPage = () => (
+export default  function IndexPage() { return (
 	<SecondPage />
 //  <Redirect to="/about"/>
-)
+)}
 
