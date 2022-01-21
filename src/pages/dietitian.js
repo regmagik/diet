@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const DietitianPage = () => (
+export default DietitianPage = () => (
   <Layout>
     <Seo title="Registered Dietitian" />
 <div class="sections-wrapper">
@@ -34,5 +34,3 @@ const DietitianPage = () => (
     </p>
   </Layout>
 )
-
-export default IndexPage
