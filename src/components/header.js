@@ -1,9 +1,9 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { Button, Collapse, Container, Row, Col, Jumbotron, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Container, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem } from 'reactstrap';
 
-export function NavMenu(props) {
+export function NavMenu({siteTitle}) {
   
 	const [state, setState] = React.useState({
 		collapsed: true
@@ -19,18 +19,32 @@ export function NavMenu(props) {
 		<header>
 		  <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" light>
 			<Container>
-			  <NavbarBrand href="/">Lena Gabinskaya</NavbarBrand>
+			   <NavbarBrand>
+
+			  <h1 style={{ margin: 0 }}>
+        <Link to="/"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          {siteTitle}
+        </Link>
+      </h1>
+<h2>Registered Dietitian</h2>
+</NavbarBrand>
+
 			  <NavbarToggler onClick={toggleNavbar} className="mr-2" />
 			  <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!state.collapsed} navbar>
 				<Nav>
 				  <NavItem>
-					<NavLink className="text-dark" href="/">Home</NavLink>
+					<Link className="nav-link text-dark" to="/">Home</Link>
 				  </NavItem>
 				  <NavItem>
-					<NavLink className="text-dark" href="/services">Services</NavLink>
+					<Link className="nav-link text-dark" to="/services">Services</Link>
 				  </NavItem>
 				  <NavItem>
-					<NavLink className="text-dark" href="/contact">Contact</NavLink>
+					<Link className="nav-link text-dark" to="/contact">Contact</Link>
 				  </NavItem>
 				</Nav>
 			  </Collapse>
@@ -44,31 +58,19 @@ const Header = ({ siteTitle }) => (
 <>  <header
     style={{
       background: `rgb(110,141,63)`,
-      marginBottom: `1.45rem`,
+//      marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+//        padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-<h2>Registered Dietitian</h2>
     </div>
+	<NavMenu siteTitle={siteTitle}/>
   </header>
-<NavMenu/>
 </>)
 
 Header.propTypes = {
