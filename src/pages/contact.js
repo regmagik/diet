@@ -11,7 +11,7 @@ const SecondPage = () => (
     <p>Get in touch with me to book your free consultation or ask me any question you might have.</p>
 
 <p>If you need more information, have questions, or would like to offer a suggestion, please be in touch. You can contact me via phone, email or by filling out the form. I’ll get back to you as soon as possible.</p>
-
+<p>Вы хотите забронировать бесплатную консультацию,  если вам нужна дополнительная информация, или  у вас есть вопросы, пожалуйста, свяжитесь с нами.</p>
     <h3>Take the first step toward a healthier you</h3>
 <p>E-Mail - lenagabinskayardn@gmail.com</p>
 
