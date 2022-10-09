@@ -1,4 +1,11 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+This repo is a source for registered diatitian web site www.lenagabinskayardn.com.
+
+This site is hosted on Netlify, the SSL certificate is provided by Let's Encrypt. To renew the certificate visit [HTTPS settings](https://app.netlify.com/sites/lenadiet/settings/domain#https).
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7733edff-17a1-4aab-aca5-8914322d449c/deploy-status)](https://app.netlify.com/sites/lenadiet/deploys)
+
+The site is created using Gatsby template. Below is the info from the Gatsby template.
+
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
