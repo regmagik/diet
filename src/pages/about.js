@@ -14,7 +14,7 @@ const SecondPage = () => (
 	I earned my degree from <b>Georgia Southern University</b> and completed a supervised dietetic internship, 
 	which led me to over 20 years of work with WIC, helping families improve children’s health, growth, and nutrition.</p>
 	<p>When my child was diagnosed with autism at age three, it profoundly changed the way I view health, nutrition, and child development. This personal experience inspired me to expand my approach, integrating functional and evidence-based strategies tailored to each child's unique needs.</p>
-	<p>I specialize in uncovering the <b>root causes</b> of health and developmental challenges and creating personalized nutrition and wellness plans. My clinical license allows me to collaborate with leading U.S. laboratories to ensure families receive accurate testing and expert guidance. Whether it’s optimizing early nutrition, supporting breastfeeding, or addressing developmental concerns, my mission is to empower families with the knowledge and tools they need to help their children thrive.<p>
+	<p>I specialize in uncovering the <b>root causes</b> of health and developmental challenges and creating personalized nutrition and wellness plans. My clinical license allows me to collaborate with leading U.S. laboratories to ensure families receive accurate testing and expert guidance. Whether it’s optimizing early nutrition, supporting breastfeeding, or addressing developmental concerns, my mission is to empower families with the knowledge and tools they need to help their children thrive.</p>
 <br/>
 📧 lenagabinskayardn@gmail.com
 <br/>
