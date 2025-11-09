@@ -4,7 +4,7 @@ import { Card } from "reactstrap"
 function MyCard() {
 
   return (
-    <Card>
+    <Card className="mb-3 p-2">
 		📧 lenagabinskayardn@gmail.com
 		<br/>📞 (404) 884-2886
     </Card>
